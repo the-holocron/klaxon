@@ -49,7 +49,9 @@
   },
   "release": {
     "extends": "@theholocron/semantic-release-config",
-    "branch": "master"
+    "branches": [
+      "main"
+    ]
   },
   "stylelint": {
     "extends": "@theholocron"
