@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/the-holocron/klaxon/compare/1.0.2...1.1.0) (2021-05-06)
+
+
+### Features
+
+* add in module support ([6c95d6d](https://github.com/the-holocron/klaxon/commit/6c95d6d9870db784408068b7c928b750f917a3d7))
+
 ## [1.0.2](https://github.com/the-holocron/klaxon/compare/1.0.1...1.0.2) (2021-05-06)
 
 

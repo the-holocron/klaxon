@@ -3,7 +3,7 @@
   "description": "Klaxon is the loudest way to debug within the Galaxy.",
   "homepage": "https://github.com/the-holocron/klaxon#readme",
   "author": "Newton Koumantzelis",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "module": "src/index.js",
   "files": [
