@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/the-holocron/klaxon/compare/1.0.0...1.0.1) (2021-05-06)
+
+
+### Bug Fixes
+
+* export ([364858e](https://github.com/the-holocron/klaxon/commit/364858e828cebb5673ce52c05570b6c1bf211bb9))
+
 # 1.0.0 (2021-05-06)
 
 
