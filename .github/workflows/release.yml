@@ -12,57 +12,26 @@ jobs:
     steps:
       - run: echo "${{ github.event.head_commit.message }}"
 
-  test:
-    needs: prepare
-    name: Test on node ${{ matrix.node }} and ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        node:
-          - 12
-          - 13
-        os:
-          - ubuntu-latest
-          - windows-latest
-          - macOS-latest
-    steps:
-      - name: checkout
-        uses: actions/checkout@v1
-      - name: setup node
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
-      - name: Install dependencies
-        env:
-          CI: true
-        run: npm ci
-      - name: Lint
-        run: npm run lint
-      - name: Unit tests
-        run: npm test
-
   publish:
     name: Publish
-    needs: test
+    needs: prepare
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v1
-      - name: setup node
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 13
-          registry-url: https://registry.npmjs.org
+          node-version: 15
       - name: Install
-        env:
-          CI: true
         run: npm ci
       - name: Compile
         run: npm run dist
       - name: Publish
         if: success()
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
