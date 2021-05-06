@@ -14,7 +14,7 @@
 
 If you have a question about this project, how to use it, or need clarification about something:
 
-1. Open a [support request](https://github.com/the-holocron/stormtrooper/issues/new?template=support_request.md) or reach out via [email](mailto:holocron77@gmail.com).
+1. Open a [support request](https://github.com/the-holocron/klaxon/issues/new?template=support_request.md) or reach out via [email](mailto:holocron77@gmail.com).
 2. Provide as much context as you can about what you're running into.
 3. Provide browser, library and/or platform versions (`nodejs`, `npm`, etc), depending on what seems relevant. If not, please be ready to provide that information if maintainers ask for it.
 
@@ -46,7 +46,7 @@ Spending the extra time up front can help save everyone time in the long run.
 
 If you run into an error or bug with the project:
 
-1. Open a [bug report](https://github.com/the-holocron/stormtrooper/issues/new?template=bug_report.md)
+1. Open a [bug report](https://github.com/the-holocron/klaxon/issues/new?template=bug_report.md)
 2. Fill out the template and provide as much context as you can about what you're running into and be sure to include steps **to reproduce** such that someone else can follow to recreate the bug or error on their own.
 4. Provide project and platform versions (`nodejs`, `npm`, etc), depending on what seems relevant. If not, please be ready to provide that information if maintainers ask for it.
 
@@ -54,7 +54,7 @@ Once it's filed:
 
 * The team will [label the issue](./CONTRIBUTING.md#label-issues).
 * A team member will try to reproduce the issue with your provided steps. If there are no obvious ways to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-clarification`. Bugs with the `needs-clarification` tag will not be addressed until they are reproduced.
-* If the team is able to reproduce the issue, it will be marked `fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be [implemented by someone](https://github.com/the-holocron/stormtrooper/graphs/contributors).
+* If the team is able to reproduce the issue, it will be marked `fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be [implemented by someone](https://github.com/the-holocron/klaxon/graphs/contributors).
 * If you or the maintainers don't respond to an issue for 30 days, the [issue will be closed](./MAINTAINING.md#clean-up-issues-and-prs). If you want to come back to it, reply (once, please), and we'll reopen the existing issue. Please avoid filing new issues as extensions of one you already made.
 * `critical` issues may be left open, depending on perceived immediacy and severity, even past the 30 day deadline.
 
@@ -62,7 +62,7 @@ Once it's filed:
 
 If the project doesn't do something you need or want it to do:
 
-1. Open a [feature request](https://github.com/the-holocron/stormtrooper/issues/new?template=feature_request.md)
+1. Open a [feature request](https://github.com/the-holocron/klaxon/issues/new?template=feature_request.md)
 2. Fill out the template and provide as much context as you can about what you're running into.
 3. Please try and be clear about why existing features and alternatives would not work for you.
 

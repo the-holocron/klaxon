@@ -30,7 +30,7 @@ Sometimes, the `support` label will be added to things that turn out to actually
 
 In order to help other folks out with their questions:
 
-* Go to the issue tracker and [filter open issues by the `support` label](https://github.com/the-holocron/stormtrooper/issues?q=is%3Aopen+is%3Aissue+label%3Asupport).
+* Go to the issue tracker and [filter open issues by the `support` label](https://github.com/the-holocron/klaxon/issues?q=is%3Aopen+is%3Aissue+label%3Asupport).
 * Read through the list until you find something that you're familiar enough with to give an answer.
 * Respond to the issue with whatever details are needed to clarify the question, or get more details about what's going on.
 * Once the discussion wraps up and things are clarified, either close the issue, or ask the original issue filer (or a maintainer) to close it for you.
@@ -47,7 +47,7 @@ Some notes on picking up support issues:
 
 One of the most important tasks in handling issues is labeling them usefully and accurately. All other tasks involving issues ultimately rely on the issue being classified in such a way that relevant parties looking to do their own tasks can find them quickly and easily.
 
-In order to label issues, [open up the list of unlabeled issues](https://github.com/the-holocron/stormtrooper/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) and, **from newest to oldest**, read through each one and apply issue labels according to the table below. If you're unsure about what label to apply, skip the issue and try the next one: don't feel obligated to label each and every issue yourself!
+In order to label issues, [open up the list of unlabeled issues](https://github.com/the-holocron/klaxon/issues?q=is%3Aopen+is%3Aissue+no%3Alabel) and, **from newest to oldest**, read through each one and apply issue labels according to the table below. If you're unsure about what label to apply, skip the issue and try the next one: don't feel obligated to label each and every issue yourself!
 
 Label | Apply When | Notes
 --- | --- | ---
@@ -80,7 +80,7 @@ To clean up issues and PRs:
   * not marked as `good first issue` or `help wanted` (these might stick around for a while, in general, as they're intended to be available)
   * no explicit messages in the comments asking for it to be left open
   * does not belong to a milestone
-* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See https://github.com/the-holocron/stormtrooper/blob/latest/MAINTAINING.md#clean-up-issues-and-prs for more details."
+* Leave a message when closing saying "Cleaning up stale issue. Please reopen or ping us if and when you're ready to resume this. See https://github.com/the-holocron/klaxon/blob/latest/MAINTAINING.md#clean-up-issues-and-prs for more details."
 
 ## Create a Pull Request
 
@@ -88,7 +88,7 @@ If you're unfamiliar with the Github flow, please [read this guide](https://guid
 
 > Contributions are always welcome, but surprise patches are mostly just a burden. Yes, you are offering your help, but someone else will have to maintain your code over the long term - get their buy-in first, avoid surprises. Even worse, a localized change to address a specific problem will often miss the full implications to the project: other existing use cases, future roadmap plans, or overall architectural decisions. A good idea can be implemented inappropriately for the specific project; it can be invalidated by another effort that you may not even be aware of; the timing may be wrong, and a dozen other reasons can conspire against you.
 
-1. Clone the repo (`git clone https://github.com/the-holocron/stormtrooper`)
+1. Clone the repo (`git clone https://github.com/the-holocron/klaxon`)
 2. If you've cloned previously, then get latest changes (`git checkout master; git pull origin master`).
 3. Create your feature branch (`git checkout -b <my-new-feature>`); checkout the
    guide below for our branching strategy.
@@ -205,6 +205,6 @@ If you want to verify that the release will match the above rules then run a dry
 
 **Permission Required**: [Owner](./CONTRIBUTING.md#permissions)
 
-Once a version has been determined, run `npm run release`. This will update the `version` key within the [package.json](https://github.com/the-holocron/stormtrooper/blob/master/package.json#L5) and the [package-lock.json](https://github.com/the-holocron/stormtrooper/blob/master/package-lock.json#L3), as well as generate the [CHANGELOG](../CHANGELOG.md), commit using our conventions and create the tag. **DO NOT USE the `npm version` command!**
+Once a version has been determined, run `npm run release`. This will update the `version` key within the [package.json](https://github.com/the-holocron/klaxon/blob/master/package.json#L5) and the [package-lock.json](https://github.com/the-holocron/klaxon/blob/master/package-lock.json#L3), as well as generate the [CHANGELOG](../CHANGELOG.md), commit using our conventions and create the tag. **DO NOT USE the `npm version` command!**
 
 After running the script, the next step is to push to the remote using the following command: `git push --follow-tags origin master`
