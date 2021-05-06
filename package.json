@@ -61,7 +61,7 @@
   },
   "scripts": {
     "commit": "commit",
-    "dist": "babel src -d dist/scripts --source-maps",
+    "dist": "babel src -d dist --source-maps",
     "lint": "eslint . --ignore-path .gitignore",
     "test:docs": "alex .",
     "test:js": "jest --passWithNoTests",
