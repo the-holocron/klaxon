@@ -5,8 +5,10 @@
   "author": "Newton Koumantzelis",
   "version": "1.0.2",
   "main": "dist/index.js",
+  "module": "src/index.js",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "repository": "https://github.com/the-holocron/klaxon.git",
   "bugs": "https://github.com/the-holocron/klaxon/issues",
