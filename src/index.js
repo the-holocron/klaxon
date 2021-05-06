@@ -100,7 +100,7 @@ function using (consoleFunction) {
 	return (consoleFunctionProxy);
 }
 
-export default {
+export const echo = {
 	// Console(ish) functions.
 	assert: using(console.assert),
 	clear: using(console.clear),
