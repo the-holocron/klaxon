@@ -47,6 +47,9 @@
   "jest": {
     "preset": "@theholocron/jest-preset"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "release": {
     "extends": "@theholocron/semantic-release-config",
     "branches": [
